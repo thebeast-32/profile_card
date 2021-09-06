@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 44vh right 38vw, top 44vh left 38vw;
+  background-color: var(--Dark-cyan);
+}
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  height: 400px;
+  max-width: 85%;
+}
+
+.img {
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  background: url(./images/bg-pattern-card.svg);
+}
+.info {
+  text-align: center;
+  line-height: 1.8rem;
+  margin-top: -15px;
+}
+.profile_img {
+  background: url(./images/image-victor.jpg) no-repeat;
+  background-position: center;
+  height: 95px;
+  width: 95px;
+  margin-top: -75px;
+  border-radius: 50px;
+  border: 5px solid #fff;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background: white;
+  border-radius: 0 0 20px 20px;
+}
+.hr {
+  width: 300px;
+  height: 0.9px;
+  background: var(--Dark-gray);
+  border-radius: 10px;
+}
+.stats {
+  width: 300px;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2 {
+  font-size: 18px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+span,
+p {
+  color: var(--Dark-grayish-blue);
+}
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+.attribution a {
+  text-decoration: none;
+  color: crimson;
+}
+@media screen and (max-width: 290px) {
+  ul {
+    flex-direction: column;
+  }
+}
